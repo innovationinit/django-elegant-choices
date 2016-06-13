@@ -1,0 +1,11 @@
+[run]
+branch = True
+source = elegant_choices
+
+[report]
+omit = */tests/*
+exclude_lines =
+    pragma: no cover
+
+[html]
+directory = coverage
