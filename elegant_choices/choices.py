@@ -50,7 +50,7 @@ class ChoicesMetaclass(type):
         choice_list = []
         value_to_choice_dict = {}
 
-        for attribute_name, attribute_value in attrs.iteritems():
+        for attribute_name, attribute_value in attrs.items():
             if isinstance(attribute_value, Choice):
                 attribute_value.name = attribute_name
                 choice_list.append(attribute_value)
@@ -128,4 +128,4 @@ class Choices(six.with_metaclass(ChoicesMetaclass, object)):
         try:
             return next(choice for choice in cls.choices if choice.meta.get(meta_key) == meta_value)
         except StopIteration:
-            raise MissingChoiceException('{} is not an available choice!'.format(meta_value))
+            raise MissingChoiceException('{value} is not an available choice!'.format(value=meta_value))
