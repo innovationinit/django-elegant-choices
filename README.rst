@@ -5,7 +5,7 @@ Django Elegant Choices
 .. image:: https://travis-ci.org/innovationinit/django-elegant-choices.svg?branch=master
     :target: https://travis-ci.org/innovationinit/django-elegant-choices
 
-.. image:: https://coveralls.io/repos/github/innovationinit/django-elegant-choices/badge.svg?branch=master
+.. image:: https://coveralls.io/repos/github/innovationinit/django-elegant-choices/badge.svg?branch=master&foolcache=1
     :target: https://coveralls.io/github/innovationinit/django-elegant-choices?branch=master
 
 -------
